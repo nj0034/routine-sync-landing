@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# IDE and Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+.omc/
+
+# Cloudflare Wrangler
+.wrangler/
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/

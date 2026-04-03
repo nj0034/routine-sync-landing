@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Redirecting...</title></head>
+<body>
+<script>
+  var params = new URLSearchParams(window.location.search);
+  var code = params.get('code');
+  if (code) {
+    window.location.href = 'routine-sync://kakao?code=' + encodeURIComponent(code);
+  } else {
+    document.body.textContent = '로그인 실패: 인증 코드를 받지 못했습니다.';
+  }
+</script>
+<noscript>JavaScript를 활성화해 주세요.</noscript>
+</body>
+</html>
